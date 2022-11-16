@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import './App.css';
+import SignUp from './components/sign-up';
+import SignIn from './components/sign-in'
 
 function App() {
   return (
+    
+  <HashRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+         <Switch>
+          <Route path='/sign-up' component={ SignUp } exact/>
+          <Route path='/sign-in' component={ SignIn } />
+        </Switch>
+   
     </div>
+  </HashRouter>
+  
   );
 }
 
