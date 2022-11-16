@@ -37,7 +37,11 @@ class SignUp extends Component {
   }
 
   handleSubmit(e) {
-    console.log('Firs Name: ' + this.state.value1 + '<br>' + ' Last Name:' + this.state.value2 + ' email:' + this.state.value3 + ' password:' + this.state.value4);
+   console.log(`
+   First Name: ${this.state.value1}
+   Last Name: ${this.state.value2}
+   Email: ${this.state.value3}
+   Password: ${this.state.value4}`);
     e.preventDefault();
   }
 
@@ -46,7 +50,9 @@ class SignUp extends Component {
   
       <Div>
         <Icon src={Img}></Icon>
+        
         <Text>Sign Up</Text>
+
       <Form onSubmit={this.handleSubmit}>
         <InputHalf type="text" placeholder="First Name" value={this.state.value1} onChange={this.handleChangeFirstname} />
         <span> </span>
@@ -56,7 +62,7 @@ class SignUp extends Component {
     
         <Button type="submit" value="Submit"> Submit </Button>
 
-        <Link><LinkA href="/log-form/#/sign-in">Already have an account? Sign in</LinkA></Link>
+        <Link><LinkA href="/log-form/#/sign-in"> Already have an account? Sign in </LinkA></Link>
       </Form>
     </Div>
       

@@ -24,7 +24,9 @@ class SignIn extends Component {
   }
 
   handleSubmit(e) {
-    console.log('email: ' + this.state.value1 + ' password:' + this.state.value2);
+    console.log(`
+    Email: ${this.state.value1}
+    Password: ${this.state.value2}`);
     e.preventDefault();
   }
 
