@@ -69,8 +69,14 @@ export const Button = styled.button`
 export const Link = styled.li`
 list-style-type: none;
 margin: 2em auto;
+&:active {
+  transform: translateY(1px);
+}
 `
 export const LinkA = styled.a`
 color: white;
 text-decoration: none;
+&:hover {
+  color: #e4e8f4;
+}
 `

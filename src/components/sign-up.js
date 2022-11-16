@@ -56,7 +56,7 @@ class SignUp extends Component {
     
         <Button type="submit" value="Submit"> Submit </Button>
 
-        <Link><LinkA href="/log-form/#sign-in">Already have an account? Sign in</LinkA></Link>
+        <Link><LinkA href="/log-form/#sign-in/">Already have an account? Sign in</LinkA></Link>
       </Form>
     </Div>
       
