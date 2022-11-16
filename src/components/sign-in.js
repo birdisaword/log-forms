@@ -42,7 +42,7 @@ class SignIn extends Component {
     
         <Button type="submit" value="Submit"> Submit </Button>
 
-        <Link><LinkA href="/log-form/#/sign-up">Don't have an account? Sign up</LinkA></Link>
+        <Link><LinkA href="/log-forms/#/sign-up">Don't have an account? Sign up</LinkA></Link>
       </Form>
     </Div>
       

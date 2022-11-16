@@ -50,7 +50,7 @@ class SignUp extends Component {
   
       <Div>
         <Icon src={Img}></Icon>
-        
+
         <Text>Sign Up</Text>
 
       <Form onSubmit={this.handleSubmit}>
@@ -62,7 +62,7 @@ class SignUp extends Component {
     
         <Button type="submit" value="Submit"> Submit </Button>
 
-        <Link><LinkA href="/log-form/#/sign-in"> Already have an account? Sign in </LinkA></Link>
+        <Link><LinkA href="/log-forms/#/sign-in"> Already have an account? Sign in </LinkA></Link>
       </Form>
     </Div>
       
